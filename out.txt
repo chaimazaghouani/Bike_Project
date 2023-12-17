@@ -1,3 +1,0 @@
-:: loading settings :: url = jar:file:/home/dell/spark/jars/ivy-2.5.1.jar!/org/apache/ivy/core/settings/ivysettings.xml
-/usr/lib/python3/dist-packages/requests/__init__.py:89: RequestsDependencyWarning: urllib3 (1.26.18) or chardet (5.2.0) doesn't match a supported version!
-  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
