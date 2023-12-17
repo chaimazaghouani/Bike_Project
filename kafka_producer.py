@@ -35,7 +35,7 @@ while True:  # Infinite loop for continuous streaming, you may adjust this as ne
                     'last_update': utcfromtimestamp
                 }
 
-                producer.send('bikes', value=d)
+                producer.send('bike', value=d)
                 print(d)
                 time.sleep(2)
                 
