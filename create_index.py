@@ -31,5 +31,5 @@ if __name__ == "__main__":
         }
 
     es = Elasticsearch("http://localhost:9200")
-    create_index(client=es, index="bikes",mapping=mapping)
+    create_index(client=es, index="bike",mapping=mapping)
     #response = es.indices.delete(index='bike', ignore=[400, 404])
