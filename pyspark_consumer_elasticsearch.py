@@ -32,7 +32,7 @@ schema = StructType([
 kafka_df = spark.readStream \
     .format("kafka") \
     .option("kafka.bootstrap.servers", "localhost:9092") \
-    .option("subscribe", "bikes") \
+    .option("subscribe", "bike") \
     .option("startingOffsets", "latest") \
     .load()
 
@@ -59,7 +59,7 @@ data = json_df.writeStream \
     .option("es.nodes", "127.0.0.1") \
     .option("es.port", "9200") \
     .option("es.index.auto.create", "true") \
-    .option("es.resource", "bikes") \
+    .option("es.resource", "bike") \
     .option("es.nodes.wan.only", "true") \
     .option("checkpointLocation", "/home/dell/Bureau/checkpoints/new10") \
     .start()
