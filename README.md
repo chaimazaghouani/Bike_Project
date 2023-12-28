@@ -1,7 +1,6 @@
 # Creating a Real-Time Bike-info Data Pipeline with Kafka, Apache Spark, Elasticsearch and Kibana
 
-In this project, we will use a real-time bike tracking API, Apache Kafka, ElastichSearch and Kibana to create a real-time bike-info data pipeline and track the available stations in real-time. We will use a high-level architecture and
-corresponding configurations that will allow us to create this data pipeline. The end result will be a Kibana dashboard fetching real-time data from ElasticSearch.
+In this project,  we utilize Kafka for real-time collection of bicycle station data, analyze it with Spark, and store it in Elasticsearch. Kibana creates a visual dashboard with a map showing the stations and their availabilities. Finally, the data is retained in a Hadoop DataLake named Hive for further analysis, providing an integrated solution for real-time management of bicycle stations
 
 
 ## Pipeline
