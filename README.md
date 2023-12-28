@@ -87,16 +87,19 @@ Hive Implementation for Historical API Data Storage: Managing and Storing Histor
 
 ## Final result
 -Kibana:
+
 ![image](https://github.com/chaimazaghouani/Bike_Project/assets/110690177/67620a23-223b-4946-b1ed-a25b70ae9565)
+
 -Hive:
+
 ![image](https://github.com/chaimazaghouani/Bike_Project/assets/110690177/5ea92c61-150b-4a9e-9ac0-e0456da25d66) 
 
 
 ## Contribution
 
-[Chaima Zaghouani])
+Chaima Zaghouani
 
-[Yomna Hajji]
+Yomna Hajji
 
 
 
