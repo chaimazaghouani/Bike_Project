@@ -67,7 +67,19 @@ Hive Implementation for Historical API Data Storage: Managing and Storing Histor
 
 6. Run PySpark consumer with spark-submit:
 
-`spark-submit --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.3.1,,org.elasticsearch:elasticsearch-spark-30_2.12:7.14.2 /home/dell/Bike_Project/pyspark_consumer.py`(one for elasticsearch et one for hive)
+`spark-submit \
+  --master local[*]\
+  --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.2.4,org.elasticsearch:elasticsearch-spark-30_2.12:8.8.2 \
+  --conf "spark.jars.packages=org.apache.spark:spark-sql-kafka-0-10_2.12:3.2.4,org.elasticsearch:elasticsearch-spark-30_2.12:8.8.2" \
+  pyspark_consumer_elasticsearch.py > out.txt
+
+
+# Exécution de hive :
+spark-submit \
+  --master local[*] \
+  --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.2.4,org.apache.spark:spark-hive_2.12:3.2.4 \
+  --conf "spark.jars.packages=org.apache.spark:spark-sql-kafka-0-10_2.12:3.2.4,org.apache.spark:spark-hive_2.12:3.2.4" \
+  pyspark_consumer.py > out1.txt`
 
 ## How to launch kibana dashboard
 
