@@ -65,7 +65,7 @@ Hive Implementation for Historical API Data Storage: Managing and Storing Histor
 
 `python3 ./kafka_producer.py`
 
-6. Run PySpark consumer with spark-submit:
+6. Run PySpark consumer for elasticsearch with spark-submit:
 
 `spark-submit \
   --master local[*]\
