@@ -38,7 +38,7 @@ We started by collecting in real-time Bike informations ("properties": {
 The data is ingested from the biket streaming data API and sent to a kafka topic. You need to run Kafka Server with Zookeeper and create a dedicated topic for data transport.
 ###### PySpark Streaming:
  In Spark Streaming, Kafka consumer is created that periodically collect data in real time from the kafka topic and send them into an Elasticsearch index.
-###### Index flight-info to Elasticsearch:
+###### Index  to Elasticsearch:
 You need to enable and start Elasticsearch and run it to store the flight-info and their realtime information for further visualization purpose. You can navigate to http://localhost:9200 to check if it's up and running.
 ###### Kibana for visualization
 Kibana is a visualization tool that can explore the data stored in elasticsearch. In our project, instead of directly output the result, we used this visualization tool to visualize the streaming data in a real-time manner.You can navigate to http://localhost:5601 to check if it's up and running.
@@ -63,11 +63,11 @@ Hive Implementation for Historical API Data Storage: Managing and Storing Histor
 
 5. Run Kafka producer:
 
-`python3 ./real-time-flights-producer.py`
+`python3 ./kafka_producer.py`
 
 6. Run PySpark consumer with spark-submit:
 
-`spark-submit --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.3.1,,org.elasticsearch:elasticsearch-spark-30_2.12:7.14.2 /home/sirine/Downloads/spark_consumer.py`
+`spark-submit --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.3.1,,org.elasticsearch:elasticsearch-spark-30_2.12:7.14.2 /home/dell/Bike_Project/pyspark_consumer.py`(one for elasticsearch et one for hive)
 
 ## How to launch kibana dashboard
 
